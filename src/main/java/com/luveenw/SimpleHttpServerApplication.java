@@ -1,6 +1,7 @@
 package com.luveenw;
 
 import com.luveenw.health.DummyHealthCheck;
+import com.luveenw.resources.HelloWorldEndpoint;
 import io.dropwizard.Application;
 import io.dropwizard.assets.AssetsBundle;
 import io.dropwizard.setup.Bootstrap;
@@ -27,7 +28,9 @@ public class SimpleHttpServerApplication extends Application<SimpleHttpServerCon
     @Override
     public void run(final SimpleHttpServerConfiguration configuration, final Environment environment) {
         final DummyHealthCheck healthCheck = new DummyHealthCheck();
+        final HelloWorldEndpoint resource = new HelloWorldEndpoint();
 
+        environment.jersey().register(resource);
         environment.healthChecks().register("template", healthCheck);
     }
 
