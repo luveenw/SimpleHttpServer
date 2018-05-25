@@ -1,0 +1,8 @@
+server:
+#  applicationContextPath: /
+  rootPath: /api/
+
+logging:
+  level: INFO
+  loggers:
+    com.luveenw: DEBUG
