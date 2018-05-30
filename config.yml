@@ -1,6 +1,6 @@
-server:
+#server:
 #  applicationContextPath: /
-  rootPath: /api/
+#  rootPath: /api/
 
 logging:
   level: INFO
