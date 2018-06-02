@@ -17,9 +17,6 @@ public class HelloWorldEndpoint {
         DUMMY_MAP.put("2", "how are you?");
     }
 
-    public HelloWorldEndpoint() {
-    }
-
     @GET
     public Map<String, String> sayHello() {
 

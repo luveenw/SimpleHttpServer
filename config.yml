@@ -3,6 +3,6 @@
 #  rootPath: /api/
 
 logging:
-  level: INFO
+  level: WARN
   loggers:
     com.luveenw: DEBUG
